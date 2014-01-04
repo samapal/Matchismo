@@ -26,16 +26,18 @@
     PlayingCardDeck *deck = [[PlayingCardDeck alloc]init];
     PlayingCard *card = [[PlayingCard alloc]init];
     
-    if ([sender.currentTitle length]) {
-    [sender setBackgroundImage:[UIImage imageNamed:@"cardBack"] forState:UIControlStateNormal];
-    [sender setTitle:@"" forState:UIControlStateNormal];
-    }else
+    if ([sender.currentTitle length])
     {
-    [sender setBackgroundImage:[UIImage imageNamed:@"cardFront"] forState:UIControlStateNormal];
-    card = [deck drawRandomFromDeck];
-    NSLog(@"%@",[card contents]);
-    [sender setTitle:[card contents] forState:UIControlStateNormal];
-    card = nil;
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardBack"] forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }
+    else
+    {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardFront"] forState:UIControlStateNormal];
+        card = [deck drawRandomFromDeck];
+        NSLog(@"%@",[card contents]);
+        [sender setTitle:[card contents] forState:UIControlStateNormal];
+        card = nil;
     }
     self.flipCount++;
 }
