@@ -2,12 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
+      "scale" : "1x",
+      "filename" : "Olympic_Pattern_Blue_Rounded.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "2013-iphone5s-gold.png"
+      "filename" : "Olympic_Pattern_Blue_Rounded@2x.png"
     }
   ],
   "info" : {
