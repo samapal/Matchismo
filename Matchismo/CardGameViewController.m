@@ -63,4 +63,24 @@
     return [UIImage imageNamed:card.isChosen ? @"cardFront" : @"cardBack"];
 }
 
+- (IBAction)dealCards:(id)sender
+{
+    [self resetUI];
+}
+
+-(void)resetUI
+{
+    for (UIButton *cardButton in self.cardButtons)
+    {
+        NSInteger cardButtonindex = [self.cardButtons indexOfObject:cardButton];
+        Card *card = [self.game cardAtIndex:cardButtonindex];
+        [card setChosen:NO];
+        [card setMatched:NO];
+        cardButton.enabled = YES;
+        [cardButton setTitle:@"" forState:UIControlStateNormal];
+        [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
+    }//Turn over all cards,reset title and image
+   self.scoreLabel.text = @"Score:0"; //Reset score Label
+    
+}
 @end

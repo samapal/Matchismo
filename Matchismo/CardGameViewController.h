@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CardGameViewController : UIViewController
+- (IBAction)dealCards:(id)sender;
+
 
 @end

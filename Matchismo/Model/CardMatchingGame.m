@@ -80,4 +80,8 @@ static const int COST_TO_CHOOSE = 1;
         }
     }
 }
+-(void)resetScore
+{
+     _score = 0;
+}
 @end
