@@ -21,7 +21,6 @@
                 card.rank = rank;
                 card.suit = suit;
                 [self addCard:card];
-                
             }
         }
     }

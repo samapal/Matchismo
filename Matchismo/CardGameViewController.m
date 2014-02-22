@@ -23,7 +23,7 @@
 
 -(CardMatchingGame *)game
 {
-    if (!_game) _game = [[CardMatchingGame alloc]initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
+    if (!_game) _game = [[CardMatchingGame alloc]initWithCardCount:[[self cardButtons]count] usingDeck:[self createDeck]];
     return _game;
 }
 
@@ -33,7 +33,6 @@
     NSUInteger chosenButtonIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:chosenButtonIndex];
     [self updateUI];
-    
 }
 
 - (Deck *)createDeck
