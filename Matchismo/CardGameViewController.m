@@ -66,6 +66,7 @@
 - (IBAction)dealCards:(id)sender
 {
     [self resetUI];
+    [[self game]resetScore];
 }
 
 -(void)resetUI
