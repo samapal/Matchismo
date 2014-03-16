@@ -17,6 +17,8 @@
 -(void)chooseCardAtIndex:(NSUInteger)index;
 -(Card *)cardAtIndex:(NSUInteger)index;
 
-@property (nonatomic, readonly) NSInteger score;    
+@property (nonatomic, readonly) NSInteger score;
+@property (nonatomic) NSInteger numberOfCards;
 -(void)resetScore;
+-(void)setCardNumber:(NSInteger)num;
 @end

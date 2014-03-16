@@ -7,6 +7,7 @@
 //
 
 #import "CardMatchingGame.h"
+#import "CardGameViewController.h"
 @interface CardMatchingGame ()
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic,strong) NSMutableArray *cards; //of card
@@ -23,7 +24,7 @@
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck
 {
     self = [super init]; //super designated initaliser
-    
+    self.numberOfCards = 2;
     if (self)
     {
         for (int i =0; i < count; i++)
@@ -58,30 +59,48 @@ static const int COST_TO_CHOOSE = 1;
     
     if(!card.isMatched)
     {
-        if (card.isChosen) {
+        if (card.isChosen)
+        {
             card.chosen = NO;
-        }else{
-            for (Card *otherCard in self.cards) {
-                if (otherCard.isChosen && !otherCard.isMatched) {
+        }
+        else
+        {
+            for (Card *otherCard in self.cards)
+            {
+                if (otherCard.isChosen && !otherCard.isMatched)
+                {
                     int mathScore = [card match:@[otherCard]];
-                    if (mathScore) {
+                    if (mathScore)
+                    {
                         self.score += mathScore * MATCH_BONUS ;
                         otherCard.matched = YES;
                         card.matched = YES;
-                    }else{
+                    }
+                    else
+                    {
                         self.score -= MISMATCH_PENALTY;
                         otherCard.chosen = NO;
+
                     }
-                    break; // can only choose two for now
+                    break;
                 }
             }
-            self.score -= COST_TO_CHOOSE;
-            card.chosen = YES;
         }
+        
     }
+    self.score -= COST_TO_CHOOSE;
+    card.chosen = NO;
 }
+
+
+
 -(void)resetScore
 {
      _score = 0;
+}
+
+-(void)setCardNumber:(NSInteger)num
+{
+    _numberOfCards = num;
 }
 @end

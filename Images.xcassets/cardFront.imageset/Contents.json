@@ -2,13 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "White_Rounded_Rect.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "White_Rounded_Rect@2x.png"
+      "filename" : "White_Rounded_Rect.png"
     }
   ],
   "info" : {

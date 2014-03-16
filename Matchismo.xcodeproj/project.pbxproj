@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2FEC0218C415A70055FF55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2FEC0118C415A70055FF55 /* Images.xcassets */; };
 		0C4B8417186CE01700784985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8416186CE01700784985 /* Foundation.framework */; };
 		0C4B8419186CE01700784985 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8418186CE01700784985 /* CoreGraphics.framework */; };
 		0C4B841B186CE01700784985 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B841A186CE01700784985 /* UIKit.framework */; };
@@ -15,7 +16,6 @@
 		0C4B8427186CE01700784985 /* CardGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B8426186CE01700784985 /* CardGameAppDelegate.m */; };
 		0C4B842A186CE01700784985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4B8428186CE01700784985 /* Main.storyboard */; };
 		0C4B842D186CE01700784985 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4B842C186CE01700784985 /* CardGameViewController.m */; };
-		0C4B842F186CE01700784985 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4B842E186CE01700784985 /* Images.xcassets */; };
 		0C4B8436186CE01700784985 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8435186CE01700784985 /* XCTest.framework */; };
 		0C4B8437186CE01700784985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B8416186CE01700784985 /* Foundation.framework */; };
 		0C4B8438186CE01700784985 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4B841A186CE01700784985 /* UIKit.framework */; };
@@ -37,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C2FEC0118C415A70055FF55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		0C4B8413186CE01700784985 /* Matchismo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchismo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4B8416186CE01700784985 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0C4B8418186CE01700784985 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,7 +51,6 @@
 		0C4B8429186CE01700784985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C4B842B186CE01700784985 /* CardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
 		0C4B842C186CE01700784985 /* CardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
-		0C4B842E186CE01700784985 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0C4B8434186CE01700784985 /* MatchismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4B8435186CE01700784985 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0CBAD4D5189C947A003FC908 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 				0C4B8428186CE01700784985 /* Main.storyboard */,
 				0CBAD4D4189C947A003FC908 /* Model */,
 				0C4B844F186CEFA700784985 /* Controllers */,
-				0C4B842E186CE01700784985 /* Images.xcassets */,
+				0C2FEC0118C415A70055FF55 /* Images.xcassets */,
 				0C4B841D186CE01700784985 /* Supporting Files */,
 			);
 			path = Matchismo;
@@ -246,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4B842F186CE01700784985 /* Images.xcassets in Resources */,
+				0C2FEC0218C415A70055FF55 /* Images.xcassets in Resources */,
 				0C4B8421186CE01700784985 /* InfoPlist.strings in Resources */,
 				0C4B842A186CE01700784985 /* Main.storyboard in Resources */,
 			);
