@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *matchPicker;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *status_label;
 
 @end
 
@@ -89,6 +90,7 @@
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
     }//Turn over all cards,reset title and image
    self.scoreLabel.text = @"Score:0"; //Reset score Label
+    [self setStatus_label:@"Game reset"];
     
 }
 
@@ -96,6 +98,11 @@
 {
     [[self game]setNumberOfCards:[[self matchPicker] selectedSegmentIndex]+1];
     NSLog(@"Card Number changed to %li",(long)[[self game]numberOfCards]);
+}
+
+-(void)setStatus_label:(NSString *)string
+{
+    [self status_label].text = string;
 }
 
 @end

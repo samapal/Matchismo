@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icx-MB-7NP">
-                                <rect key="frame" x="20" y="414" width="280" height="21"/>
+                                <rect key="frame" x="20" y="419" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -376,6 +376,13 @@
                                     <action selector="newSelection:" destination="vXZ-lx-hvc" eventType="valueChanged" id="a7g-2L-LUK"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaL-bv-GTu">
+                                <rect key="frame" x="20" y="396" width="258" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -383,6 +390,7 @@
                     <connections>
                         <outlet property="matchPicker" destination="uD4-Pc-unb" id="fyV-66-LZi"/>
                         <outlet property="scoreLabel" destination="icx-MB-7NP" id="2NH-o8-AcZ"/>
+                        <outlet property="status_label" destination="KaL-bv-GTu" id="l7N-Tf-ryW"/>
                         <outletCollection property="cardButtons" destination="VMy-Yx-h29" id="Yo3-5F-fof"/>
                         <outletCollection property="cardButtons" destination="HTv-gv-Cka" id="vSa-Cg-Vbg"/>
                         <outletCollection property="cardButtons" destination="jzY-aV-lwW" id="soa-Br-uUN"/>
