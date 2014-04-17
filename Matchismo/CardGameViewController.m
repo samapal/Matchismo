@@ -25,12 +25,15 @@
 -(CardMatchingGame *)game
 {
     if (!_game) _game = [[CardMatchingGame alloc]initWithCardCount:[[self cardButtons]count] usingDeck:[self createDeck]];
+    NSLog(@"Производим инициализацию экземпляра game класса CardMatchingGame");
+
     return _game;
 }
 
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {
+    NSLog(@"Нажали на кнопку получили результат");
     NSUInteger chosenButtonIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:chosenButtonIndex];
     [self updateUI];
@@ -38,11 +41,14 @@
 
 - (Deck *)createDeck
 {
+    NSLog(@"Возвращаем инициализированный объек класса playingCardDeck");
     return [[PlayingCardDeck alloc]init];
+    
 }
 
 -(void)updateUI
 {
+    NSLog(@"Обновляем интерфейс");
     for (UIButton *cardButton in self.cardButtons)
     {
         NSInteger cardButtonIndex = [self.cardButtons indexOfObject:cardButton];
